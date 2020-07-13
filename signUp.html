@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/master.css">
+    <title>3jlah</title>
+  </head>
+  <body>
+
+    <div id="content">
+      <img src="./imgs/avatar.png" alt="avatar">
+
+        <div id="personalInfo">
+          <h3>Personal Information</h3>
+          <table>
+            <tr>
+              <td>First Name <label  style= "color: red">*</label></td>
+              <td> <input type="text" pattern="[A-Z]{1,20}" name ="firstName" id = "firstName" placeholder= "ELON"  required> </td>
+            </tr>
+
+            <tr>
+              <td>Last Name <label  style= "color: red">*</label></td>
+              <td> <input type="text" name = "lastName" id = "lastName" placeholder="MUSK" pattern="[A-Z]{1,20}" required> </td>
+            </tr>
+
+            <tr>
+              <td>Primary Email <label  style= "color: red">*</label></td>
+              <td> <input type="email" name = "primaryEmail" id = "primaryEmail" placeholder="X@e.com" required></td>
+            </tr>
+
+            <tr>
+              <td>Recovery Email</td>
+              <td> <input type="email" name = "RecoveryEmail" id = "RecoveryEmail" placeholder="X@e.com"> </td>
+            </tr>
+
+            <tr>
+              <td>Password <label style= "color: red">*</label></td>
+              <td> <input type="password" name = "password" id = "password" pattern=".{8,}" placeholder="xxxxxxxx" required> </td>
+            </tr>
+
+            <tr>
+              <td>Phone Number</td>
+              <td> <input type="tel" name = "phoneNumber" id = "phoneNumber"  pattern="[0-9]{3}-[0-9]{4}"
+                placeholder= "000-0000"> </td>
+            </tr>
+
+            <tr>
+              <td>Weight in Pounds</td>
+              <td> <input type="number" name = "weight" id = "weight"> </td>
+            </tr>
+
+            <tr>
+              <td>Bio</td>
+              <td> <textarea name = "bio" rows= "3" id = "bio"></textarea> </td>
+            </tr>
+
+            <tr>
+              <td>Date Of Birth</td>
+              <td> <input type="date" name = "birthday" id = "peronalInfo" > </td>
+            </tr>
+            <tr>
+              <td>Newsletter <label style= "color: red">*</label></td>
+              <td> <input type="radio" name = "Newsletter" value="Yes" id = "Yes" required> <label for="Yes">Yes</label>
+              <input type="radio" name = "Newsletter" value="No" id = "No" required> <Label for="No">No</label></td>
+            </tr>
+            <tr>
+              <td>Satisfaction with The Company</td>
+              <td><input type="range" name= "satisfaction" id="Satisfaction" min="1" max="10" value="5" class="slider"></td>
+            </tr>
+          </table>
+          <a href="requestService.html">Sign Up</a>
+        </div>
+
+    </div>
+
+    <div id="topBar">
+      <h1>AJLAH</h1>
+    </div>
+  </body>
+</html>
